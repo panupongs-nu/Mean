@@ -1,13 +1,14 @@
 /*====================================================== 
  Program: Mean
  Objectives: To find an average of all input data
- Input: n (integer), data (float) เป็นจำนวน n ค่า
+ Input: n (integer), data (float) for n values
  Output: mean of all data
  Programmer: Panupong Sornkhom (panupongs@nu.ac.th)
  Release Version: 1.0
- Date: 2020-07-29
+ Date: 2020-07-30
 =======================================================*/
 #include <stdio.h>
+#include <stdlib.h>     // for using exit()
 
 int main(void) {
   /* variable declaration */
@@ -17,6 +18,10 @@ int main(void) {
   /* Read input */
   printf("How many data?");
   scanf("%d",&n);           // Read value n
+  if (n<=0) {
+    printf("Error! number of data should be a positive integer.\n");
+    exit(1); 
+  }
 
   /* Processing */
   index = 1;                // set initial index value
