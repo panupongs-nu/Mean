@@ -4,7 +4,7 @@
  Input: n (integer), data (float) for n values
  Output: mean of all data
  Programmer: Panupong Sornkhom (panupongs@nu.ac.th)
- Release Version: 1.0
+ Release Version: 1.2
  Date: 2020-07-30
 =======================================================*/
 #include <stdio.h>
